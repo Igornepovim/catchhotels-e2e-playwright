@@ -1,0 +1,24 @@
+{
+  "name": "catchhotels",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+
+  "scripts": {
+    "test": "playwright test",
+    "pw:ui": "playwright test --ui",
+    "pw:report": "playwright test --reporter=html --retries=1 && playwright show-report",
+    "pw:cz": "playwright test --project=CZ",
+    "pw:pl": "playwright test --project=PL"
+  },
+
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  },
+
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.10.1"
+  }
+}
